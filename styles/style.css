@@ -1,0 +1,34 @@
+/*****************
+Custom Fonts Goes Here
+********************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*****************
+Common Styles Goes Here
+********************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*******************
+Top Section Design Goes Here 
+***********************/
+.top-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #2D25A0;
+}
+.top-section-headings h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color:#FFFFFF;
+}
+.top-section-banner img{
+    width:556px;
+}
