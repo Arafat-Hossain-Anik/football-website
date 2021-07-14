@@ -93,6 +93,51 @@ Players Section Design Goes Here
     color:#6C6C6C;
     ;
 }
+
+/******************
+Footer Design Goes Here
+*************/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-image img{
+    width: 483px;
+    margin-top: 158px;
+}
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 14px;
+}
+.footer-icon p{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(11, 13, 23,0.1);
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon i{
+    font-size: 17px;
+    color: #969BAB;
+}
+.footer-copyright p{
+    font-size: 18px;
+    margin-bottom:63px;
+}
+
+
+
+
+
+
+
+
 /* Responsive Design Goes Here */
 @media only screen and (max-width:688px) {
     .top-section-container{
@@ -112,11 +157,19 @@ Players Section Design Goes Here
         margin-top: 50px;
         margin-left: 0;
     }
-    .players-container{
+    /* .players-container{
 
-    }
+    } */
     .players{
         grid-template-columns:1fr;
         width: 330px;
+    }
+
+
+
+    /* Footer Image */
+    .footer-image img{
+        width: 125.8px;
+        height: 29.98px;
     }
 }
