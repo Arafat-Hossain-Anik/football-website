@@ -86,6 +86,7 @@ Rest of Players Section Design Goes Here
 }
 .player-name{
     font-size: 28px;
+    color: #18191F;
     font-weight: 700;
     margin-top: 16px;
     margin-bottom: 10px;
@@ -138,41 +139,39 @@ Rest Of Features Section Design Goes Here
     color: #000000;
 }
 
-
 /******************
 Matches Design Goes Here
 *************/
-.matches h2{
+.matches-section h2{
     text-align: center;
-    margin-top: 70px;
+    margin: 70px 0 50px;
     color: darkblue;
     font-size: 50px;
 }
-.match{
-    height: 300px;
+.matches{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.match h3{
+.matches h3{
     color:#001489;
     font-size: 1.3rem;
     margin: 20px 0;
 }
-.match p{
+.matches p{
     margin: 10px 0;
     font-size: 15px;
     color: rgb(78, 77, 77);
     font-style:italic;
 }
-.match span{
+.matches span{
     font-size: 14px;
     font-style: italic;
 }
-.next-match,.last-match{
+.match{
     box-sizing: border-box;
-    margin: 2%;
+    margin:1%;
     background-color: #ffffff;
     padding: 2%;
     box-shadow: 0px 0px 40px rgba(199, 196, 196, 0.699);
@@ -183,19 +182,12 @@ Matches Design Goes Here
     justify-content: space-between;
     align-items: baseline;
 }
-
 .match-info p{
     font-weight: 700;
 }
 .match-result{
     text-align: center;
 }
-
-
-
-
-
-
 /******************
 Footer Design Goes Here
 *************/
@@ -206,7 +198,7 @@ Footer Design Goes Here
 }
 .footer-image img{
     width: 483px;
-    margin-top: 158px;
+    margin-top: 148px;
 }
 .footer-icon{
     display: grid;
@@ -233,9 +225,11 @@ Footer Design Goes Here
     margin-bottom:63px;
 }
 
-/* Responsive Design Goes Here */
+/************************ 
+Responsive Design Goes Here 
+**************************/
 @media only screen and (max-width:688px) {
-    /* top section */
+    /**********top section************/
     .top-section-container{
         flex-direction: column;
         box-sizing: border-box;
@@ -253,23 +247,23 @@ Footer Design Goes Here
         margin-top: 50px;
         margin-left: 0;
     }
-    /* players style */
+    /*******players style ***********/
     .players{
         grid-template-columns:1fr;
         width: 330px;
     }
-    /* Feature Style */
+    /***********Feature Style*********/
     .games-and-feature h1{
         font-size: 40px;
     }
     .features-list{
         grid-template-columns:1fr;
     }
-    /* Matches Styles Goes Here */
-    .last-match ,.next-match{
+    /********Matches Styles Goes Here**********/
+    .match{
         width: 300px;
     }
-    /* Footer Image */
+    /**********Footer Image*********/
     .footer-image img{
         width: 275px;
     }
