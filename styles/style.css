@@ -149,8 +149,10 @@ Matches Design Goes Here
     font-size: 50px;
 }
 .match{
+    height: 300px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .match h3{
@@ -169,6 +171,7 @@ Matches Design Goes Here
     font-style: italic;
 }
 .next-match,.last-match{
+    box-sizing: border-box;
     margin: 2%;
     background-color: #ffffff;
     padding: 2%;
@@ -230,13 +233,6 @@ Footer Design Goes Here
     margin-bottom:63px;
 }
 
-
-
-
-
-
-
-
 /* Responsive Design Goes Here */
 @media only screen and (max-width:688px) {
     /* top section */
@@ -268,6 +264,10 @@ Footer Design Goes Here
     }
     .features-list{
         grid-template-columns:1fr;
+    }
+    /* Matches Styles Goes Here */
+    .last-match ,.next-match{
+        width: 300px;
     }
     /* Footer Image */
     .footer-image img{
