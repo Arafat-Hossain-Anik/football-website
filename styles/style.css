@@ -206,8 +206,8 @@ Footer Design Goes Here
         margin-top: 50px;
         margin-left: 0;
     }
-    /* players and features section common style */
-    .players, .features-list{
+    /* players style */
+    .players{
         grid-template-columns:1fr;
         width: 330px;
     }
@@ -215,9 +215,11 @@ Footer Design Goes Here
     .games-and-feature h1{
         font-size: 40px;
     }
+    .features-list{
+        grid-template-columns:1fr;
+    }
     /* Footer Image */
     .footer-image img{
         width: 275px;
-        
     }
 }
