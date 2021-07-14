@@ -56,21 +56,23 @@ Top Section Design Goes Here
     margin-bottom: 86px;
 }
 /**************************
-Players Section Design Goes Here 
+Players Section And Feature Section Common Design Goes Here 
 *****************************/
-.players-container{
+.players-container, .games-and-feature{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.players{
+.players, .features-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:30px;
     grid-row-gap: 27px;
-    width: 1050px;
     margin-top: 70px;
 }
+/**************************
+Rest of Players Section Design Goes Here 
+*****************************/
 .player{
     background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -93,6 +95,52 @@ Players Section Design Goes Here
     color:#6C6C6C;
     ;
 }
+
+/******************
+Rest Of Features Section Design Goes Here
+*************/
+.games-and-feature h1{
+    margin-top: 70px;
+    color: darkblue;
+    font-size: 50px;
+}
+.feature{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.feature-image, .feature-details{
+    width:100%;
+    height: 100%;
+    transition: transform 1s ease-in;
+}
+.feature-details{
+    padding: 10px;
+    position:absolute;
+    background: rgba(255, 255, 255, 0.438);
+    transform: translateY(30px);
+}
+.feature-details p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.feature:hover .feature-details{
+    transform: translateY(-205px);
+    
+}
+.feature:hover .feature-image{
+    transform: scale(1.2);
+}
+.feature-details h2{
+    color: #000000;
+}
+
+
+
+
 
 /******************
 Footer Design Goes Here
@@ -140,6 +188,7 @@ Footer Design Goes Here
 
 /* Responsive Design Goes Here */
 @media only screen and (max-width:688px) {
+    /* top section */
     .top-section-container{
         flex-direction: column;
         box-sizing: border-box;
@@ -157,16 +206,15 @@ Footer Design Goes Here
         margin-top: 50px;
         margin-left: 0;
     }
-    /* .players-container{
-
-    } */
-    .players{
+    /* players and features section common style */
+    .players, .features-list{
         grid-template-columns:1fr;
         width: 330px;
     }
-
-
-
+    /* Feature Style */
+    .games-and-feature h1{
+        font-size: 40px;
+    }
     /* Footer Image */
     .footer-image img{
         width: 275px;
